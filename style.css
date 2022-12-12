@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html, body {
+    font-family: 'Inter', sans-serif;
+}
+
+.dropdown-menu.bell {
+    background-color: #f8f8f8;
+    border-radius: 0;
+    box-shadow: 0;
+  }
+  .dropdown-menu.bell li a:link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    white-space: normal !important;
+    width: 350px;
+  }
+  .nav>li.dropdown.bell li a:hover {
+    color: #ff5500;
+    background-color: transparent;
+  }
+  .nav>li.dropdown.bell>a:hover,
+  .nav>li.dropdown.bell>a:focus {
+    color: #ff5500;
+    background-color: transparent;
+  }
+  .dropdown-menu.bell li.divider {
+    padding: 0;
+    margin: 0 20px;
+  }
+  .dropdown-menu.bell .label {
+    background-color: transparent;
+    color: #aaa;
+    font-weight: 100;
+  }
+  .badge-notify {
+    background: #ff5500;
+    margin-top: -24px;
+    margin-left: -20px;
+    height: 1.7em;
+  }
+  span.notify-link {
+    display: block;
+    padding: 0 5px 0 5px;
+  }
+
+  /* /nav */
+
+  .difficult-bar {
+    max-height: 20px;
+    color: blueviolet;
+  }
+  .difficult-bar.intermediate line[x1="18"]{
+    color: lightgray;
+  }
+  .difficult-bar.beginner line[x1="18"]{
+    color: lightgray;
+  }
+  .difficult-bar.beginner line[x1="12"]{
+    color: lightgray;
+  }
+  .card-footer {
+    background-color: inherit;
+  }
+  .bookmark .btn {
+    padding: 0;
+  }
+
+  @media (max-width: 320px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+
+@media (min-width: 586px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+    
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  
+  .container {
+    margin: 0;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  .jumbotron .lead {
+    font-size: 11px;
+  }
+  .jumbotron .btn {
+    font-size: 7px;
+    font-weight: bold;
+  }
+
+  .sponsor h6 {
+    font-size: 15px;
+  }
+  .sponsor p {
+    font-size: 13px;
+  }
+  .carousel-item .col-sm-6 {
+    padding: 0.5rem;
+  }
+  .carousel-item .card-title,
+  .carousel-item .card-text,
+  .carousel-item .vote,
+  .carousel-inner h5,
+  .carousel-inner .card-footer {
+    font-size: 0.45rem;
+  }
+  main {
+    margin-bottom: 0!important;
+  }
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-links a {
+    padding: 0 10px 0 0!important;
+  }
+  .navbar-nav-right-side {
+    flex-direction: row;
+  }
+  .bell {
+    margin-right: 4px;
+  }
+  .bell .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+    
+  .container {
+    margin: 0;
+  }
+}
+@media (min-width: 1025px) {
+    
+  .carousel-control-prev-icon {
+    margin-left: -50px;
+  }
+  .carousel-control-next-icon {
+    margin-right: -50px;
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+
+  background-color: #fff;
+  border: 1px solid #000;
+  background-image: none;
+  color: #000;
+  position: relative;
+  padding: 15px;
+}
+.bi-chevron-left,
+.bi-chevron-right {
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bi-chevron-left::before,
+.bi-chevron-right::before
+ {
+  vertical-align: bottom;
+}
+
+main {
+  margin-bottom: 200px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  padding-left: 10px;
+} 
+
+.jumbotron {
+  background-color: rgb(117,80,254);
+}
+
+.sponsor .rounded-circle {
+  padding: 8px 12px 8px 12px;
+  background-color: rgb(255, 238, 218);
+  color: rgb(194,129,53)
+}
+
+.sponsor .rounded-circle svg {
+  max-width: 16px;
+  max-height: 16px;
+}
+.jumbotron {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.inbox {
+  background-color: #ddd;
+}
+.bell {
+  position: relative;
+}
+.bell .bi-dot{
+  position: absolute;
+  top: -70%;
+  right: -30%;
+  color: rgb(117,80,254);
+  font-size: xxx-large;
+}
+.avatar{
+  position: relative;
+}
+.avatar .bi-dot {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  color: rgb(80, 254, 213);
+  font-size: xxx-large;
+}

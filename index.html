@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geeks Courses</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="./assets/logo.svg" width="40"/></a>
+            <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Browse
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Landing
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Pages
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Account
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                </li>
+                
+              </ul>
+            </div>
+            
+            <ul class="nav navbar-nav ml-auto navbar-nav-right-side order-lg-0 order-1 align-items-center justify-content-end">
+              <li class="nav-item bell">
+                  <a href="#" class="nav-link inbox rounded-circle">
+                    <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-outline-128.png" height="25" width="25" class=" avatar-img img-square">
+                    <span class="badge badge-notify"></span>
+                  </a>
+                  <i class="bi bi-dot"></i>
+              </li>
+              <li class="nav-item dropdown avatar">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/avatar-1.jpg" width="40" height="40" class="rounded-circle">
+                  </a>
+                  <i class="bi bi-dot"></i>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Edit Profile</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                  </div>
+              </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main class="wrapper flex-grow-1 mt-1">
+        <section class="bg-white">
+            <div class="jumbotron rounded-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-auto col-sm-12 col-lg-6">
+                            <h1 class="display-4 text-light">Welcome, Web Students!</h1>
+                            <p class="lead text-white-50">Hand-picked instructor and expertely crafted courses, designed for the modern students and entrepeneur.</p>
+                            <a class="btn btn-success btn-lg" href="#" role="button">Browse Courses</a>
+                            <a class="btn btn-light btn-lg" href="#" role="button">Are you instructor?</a>
+                        </div>
+                        <div class="col-auto col-sm-12 col-lg-6">
+                            <img src="./assets/hero-img.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="container mt-2 sponsor">
+                <div class="row">
+                    <div class="col-auto col-sm-12 col-lg-4 mb-3">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <span class="rounded-circle align-self-center">
+                                    <i data-feather="video"></i>
+                                </span>
+                            </div>
+                            <div class="ml-2 d-flex flex-column justify-content-center">
+                                <h6 class="mb-0 font-weight-bold">30,000 courses</h6>
+                                <p class="mb-0">Enjoiy a Variety of fresh topic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-sm-12 col-lg-4 mb-3">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <span class="rounded-circle align-self-center">
+                                    <i data-feather="users"></i>
+                                </span>
+                            </div>
+                            <div class="ml-2 d-flex flex-column justify-content-center">
+                                <h6 class="mb-0 font-weight-bold">Expert Instruction</h6>
+                                <p class="mb-0">Find the rigth instructor for you</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-sm-12 col-lg-4 mb-3">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <span class="rounded-circle align-self-center">
+                                    <i data-feather="clock"></i>
+                                </span>
+                            </div>
+                            <div class="ml-2 d-flex flex-column justify-content-center">
+                                <h6 class="mb-0 font-weight-bold">Lifetime access</h6>
+                                <p class="mb-0">Learn on your schedule</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="recommended" class="mt-5">
+            <div class="container">
+                <h4>Recommended to you</h4>
+                <div class="row">
+                    
+                        <div id="carouselExampleControls" class="carousel slide multi-item-carousel w-100" data-interval="false" data-ride="carousel" data-pause="hover">
+                            <div class="carousel-inner w-100">
+                                <div class="carousel-item active">
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                        <div class="card-deck">
+                                            <div class="card" >
+                                                <img src="./assets/course-graphql.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Graphql: Introduction to graphql for beginners</h5> <!-- titolo dest -->
+                                                  <p class="card-text font-weight-light small">
+                                                    <i class="bi bi-clock"></i>
+                                                    <span class="ml-1">2h 40min</span> <i class="difficult-bar" data-feather="bar-chart"></i><span>Advance</span></p> <!-- durata/difficoltà -->
+                                                  <p class="vote text-warning small">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                    <i class="bi bi-star"></i>
+                                                    <i class="bi bi-star"></i><span class="ml-1">2.5</span> 
+                                                    <span class="text-muted">(1,500)</span>
+                                                  </p>
+                                                  <p class="price font-weight-bolder">
+                                                    <h5>500$ 
+                                                        <del class="text-muted">600$</del>
+                                                    </h5>
+                                                  </p>
+                                                </div>
+                                                <div class="d-flex d-flex justify-content-between card-footer">
+                                                    <div>
+                                                        <img src="./assets/avatar-5.jpg" width="30" height="30" class="rounded-circle"> Brooklyn Simmons
+                                                    </div>
+                                                    <div class="bookmark">
+                                                        <a href="#" class="btn">
+                                                            <i class="bi bi-bookmark"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                        <div class="card-deck">
+                                            <div class="card" >
+                                                <img src="./assets/course-javascript.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                                <div class="card-body">
+                                                  <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5> <!-- titolo dest -->
+                                                  <p class="card-text font-weight-light small">
+                                                    <i class="bi bi-clock"></i>
+                                                    <span class="ml-1">4h 10min</span> <i class="difficult-bar" data-feather="bar-chart"></i><span>Advance</span></p> <!-- durata/difficoltà -->
+                                                  <p class="vote text-warning small">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                    <i class="bi bi-star"></i><span class="ml-1">3.5</span> 
+                                                    <span class="text-muted">(7,500)</span>
+                                                  </p>
+                                                  <p class="price font-weight-bolder">
+                                                    <h5>700$ 
+                                                        <del class="text-muted">850$</del>
+                                                    </h5>
+                                                  </p>
+                                                </div>
+                                                <div class="d-flex d-flex justify-content-between card-footer">
+                                                    <div>
+                                                        <img src="./assets/avatar-1.jpg" width="30" height="30" class="rounded-circle"> Jenny Wilson
+                                                    </div>
+                                                    <div class="bookmark">
+                                                        <a href="#" class="btn">
+                                                            <i class="bi bi-bookmark"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                        <div class="card-deck">
+                                            <div class="card" >
+                                                <img src="./assets/course-node.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Beginning Node.js, Express & MongoDb Development </h5> <!-- titolo dest -->
+                                                  <p class="card-text font-weight-light small">
+                                                    <i class="bi bi-clock"></i>
+                                                    <span class="ml-1">2h 00min</span> <i class="difficult-bar intermediate" data-feather="bar-chart"></i><span>Intermediate</span></p> <!-- durata/difficoltà -->
+                                                  <p class="vote text-warning small">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i><span class="ml-1">4.0</span> 
+                                                    <span class="text-muted">(15,700)</span>
+                                                  </p>
+                                                  <p class="price font-weight-bolder">
+                                                    <h5>$800 
+                                                        <del class="text-muted">$950</del>
+                                                    </h5>
+                                                  </p>
+                                                </div>
+                                                <div class="d-flex d-flex justify-content-between card-footer">
+                                                    <div>
+                                                        <img src="./assets/avatar-3.jpg" width="30" height="30" class="rounded-circle"> Sina Rey
+                                                    </div>
+                                                    <div class="bookmark">
+                                                        <a href="#" class="btn">
+                                                            <i class="bi bi-bookmark"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                        <div class="card-deck">
+                                            <div class="card" >
+                                                <img src="./assets/course-laravel.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn </h5> <!-- titolo dest -->
+                                                  <p class="card-text font-weight-light small">
+                                                    <i class="bi bi-clock"></i>
+                                                    <span class="ml-1">1h 00min</span> <i class="difficult-bar beginner" data-feather="bar-chart"></i><span>Beginner</span></p> <!-- durata/difficoltà -->
+                                                  <p class="vote text-warning small">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i><span class="ml-1">4.5</span> 
+                                                    <span class="text-muted">(2,500)</span>
+                                                  </p>
+                                                  <p class="price font-weight-bolder">
+                                                    <h5>$170 
+                                                        <del class="text-muted">$220</del>
+                                                    </h5>
+                                                  </p>
+                                                </div>
+                                                <div class="d-flex d-flex justify-content-between card-footer">
+                                                    <div>
+                                                        <img src="./assets/avatar-7.jpg" width="30" height="30" class="rounded-circle"> Sobo Rikan
+                                                    </div>
+                                                    <div class="bookmark">
+                                                        <a href="#" class="btn">
+                                                            <i class="bi bi-bookmark"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev w-auto" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                                <span class="carousel-control-prev-icon rounded-circle" aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next w-auto" type="button" data-target="#carouselExampleControls" data-slide="next">
+                            <span class="carousel-control-next-icon rounded-circle" aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                            <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    
+                    
+                </div>       
+        </section>
+
+        <section id="mostpopular" class="mt-5">
+            <div class="container">
+                <h4>Most popular</h4>
+                <div class="row">
+                    
+                    <div id="carouselExampleControls1" class="carousel slide multi-item-carousel w-100" data-interval="false" data-ride="carousel" data-pause="hover">
+                        <div class="carousel-inner w-100">
+                            <div class="carousel-item active">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                    <div class="card-deck">
+                                        <div class="card" >
+                                            <img src="./assets/course-html.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                            <div class="card-body">
+                                              <h5 class="card-title">Html Full course - Build a Website Tutorial</h5> <!-- titolo dest -->
+                                              <p class="card-text font-weight-light small">
+                                                <i class="bi bi-clock"></i>
+                                                <span class="ml-1">2h 40min</span> <i class="difficult-bar" data-feather="bar-chart"></i><span>Advance</span></p> <!-- durata/difficoltà -->
+                                              <p class="vote text-warning small">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i><span class="ml-1">2.5</span> 
+                                                <span class="text-muted">(1,500)</span>
+                                              </p>
+                                              <p class="price font-weight-bolder">
+                                                <h5>500$ 
+                                                    <del class="text-muted">600$</del>
+                                                </h5>
+                                              </p>
+                                            </div>
+                                            <div class="d-flex d-flex justify-content-between card-footer">
+                                                <div>
+                                                    <img src="./assets/avatar-5.jpg" width="30" height="30" class="rounded-circle"> Brooklyn Simmons
+                                                </div>
+                                                <div class="bookmark">
+                                                    <a href="#" class="btn">
+                                                        <i class="bi bi-bookmark"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                    <div class="card-deck">
+                                        <div class="card" >
+                                            <img src="./assets/course-javascript.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                            <div class="card-body">
+                                              <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5> <!-- titolo dest -->
+                                              <p class="card-text font-weight-light small">
+                                                <i class="bi bi-clock"></i>
+                                                <span class="ml-1">4h 10min</span> <i class="difficult-bar" data-feather="bar-chart"></i><span>Advance</span></p> <!-- durata/difficoltà -->
+                                              <p class="vote text-warning small">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <i class="bi bi-star"></i><span class="ml-1">3.5</span> 
+                                                <span class="text-muted">(7,500)</span>
+                                              </p>
+                                              <p class="price font-weight-bolder">
+                                                <h5>700$ 
+                                                    <del class="text-muted">850$</del>
+                                                </h5>
+                                              </p>
+                                            </div>
+                                            <div class="d-flex d-flex justify-content-between card-footer">
+                                                <div>
+                                                    <img src="./assets/avatar-1.jpg" width="30" height="30" class="rounded-circle"> Jenny Wilson
+                                                </div>
+                                                <div class="bookmark">
+                                                    <a href="#" class="btn">
+                                                        <i class="bi bi-bookmark"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                    <div class="card-deck">
+                                        <div class="card" >
+                                            <img src="./assets/course-node.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                            <div class="card-body">
+                                              <h5 class="card-title">Beginning Node.js, Express & MongoDb Development </h5> <!-- titolo dest -->
+                                              <p class="card-text font-weight-light small">
+                                                <i class="bi bi-clock"></i>
+                                                <span class="ml-1">2h 00min</span> <i class="difficult-bar intermediate" data-feather="bar-chart"></i><span>Intermediate</span></p> <!-- durata/difficoltà -->
+                                              <p class="vote text-warning small">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i><span class="ml-1">4.0</span> 
+                                                <span class="text-muted">(15,700)</span>
+                                              </p>
+                                              <p class="price font-weight-bolder">
+                                                <h5>$800 
+                                                    <del class="text-muted">$950</del>
+                                                </h5>
+                                              </p>
+                                            </div>
+                                            <div class="d-flex d-flex justify-content-between card-footer">
+                                                <div>
+                                                    <img src="./assets/avatar-3.jpg" width="30" height="30" class="rounded-circle"> Sina Rey
+                                                </div>
+                                                <div class="bookmark">
+                                                    <a href="#" class="btn">
+                                                        <i class="bi bi-bookmark"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                    <div class="card-deck">
+                                        <div class="card" >
+                                            <img src="./assets/course-react.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                            <div class="card-body">
+                                              <h5 class="card-title">How to easily create a website with React </h5> <!-- titolo dest -->
+                                              <p class="card-text font-weight-light small">
+                                                <i class="bi bi-clock"></i>
+                                                <span class="ml-1">3h 55min</span> <i class="difficult-bar advance" data-feather="bar-chart"></i><span>Advance</span></p> <!-- durata/difficoltà -->
+                                              <p class="vote text-warning small">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i><span class="ml-1">4.5</span> 
+                                                <span class="text-muted">(1,500)</span>
+                                              </p>
+                                              <p class="price font-weight-bolder">
+                                                <h5>$600
+                                                    <del class="text-muted">$750</del>
+                                                </h5>
+                                              </p>
+                                            </div>
+                                            <div class="d-flex d-flex justify-content-between card-footer">
+                                                <div>
+                                                    <img src="./assets/avatar-7.jpg" width="30" height="30" class="rounded-circle"> Sobo Rikan
+                                                </div>
+                                                <div class="bookmark">
+                                                    <a href="#" class="btn">
+                                                        <i class="bi bi-bookmark"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev w-auto" type="button" data-target="#carouselExampleControls1" data-slide="prev">
+                            <span class="carousel-control-prev-icon rounded-circle" aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next w-auto" type="button" data-target="#carouselExampleControls1" data-slide="next">
+                        <span class="carousel-control-next-icon rounded-circle" aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                        <span class="sr-only">Next</span>
+                        </button>
+                    </div>
+                
+                
+            </div>
+            </div>
+            
+        </section>
+
+        <section id="trending" class="mt-5">
+            <div class="container">
+                <h4>Trending</h4>
+                <div class="row">
+                    
+                    <div id="carouselExampleControls2" class="carousel slide multi-item-carousel w-100" data-interval="false" data-ride="carousel" data-pause="hover">
+                        <div class="carousel-inner w-100">
+                            <div class="carousel-item active">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                    <div class="card-deck">
+                                        <div class="card" >
+                                            <img src="./assets/course-gatsby.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                            <div class="card-body">
+                                              <h5 class="card-title">Revolutionize how to build the web</h5> <!-- titolo dest -->
+                                              <p class="card-text font-weight-light small">
+                                                <i class="bi bi-clock"></i>
+                                                <span class="ml-1">2h 40min</span> <i class="difficult-bar" data-feather="bar-chart"></i><span>Advance</span></p> <!-- durata/difficoltà -->
+                                              <p class="vote text-warning small">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i><span class="ml-1">2.5</span> 
+                                                <span class="text-muted">(1,500)</span>
+                                              </p>
+                                              <p class="price font-weight-bolder">
+                                                <h5>500$ 
+                                                    <del class="text-muted">600$</del>
+                                                </h5>
+                                              </p>
+                                            </div>
+                                            <div class="d-flex d-flex justify-content-between card-footer">
+                                                <div>
+                                                    <img src="./assets/avatar-5.jpg" width="30" height="30" class="rounded-circle"> Brooklyn Simmons
+                                                </div>
+                                                <div class="bookmark">
+                                                    <a href="#" class="btn">
+                                                        <i class="bi bi-bookmark"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                    <div class="card-deck">
+                                        <div class="card" >
+                                            <img src="./assets/course-html.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                            <div class="card-body">
+                                              <h5 class="card-title">HTML Full course - Build a Website Tutorial</h5> <!-- titolo dest -->
+                                              <p class="card-text font-weight-light small">
+                                                <i class="bi bi-clock"></i>
+                                                <span class="ml-1">4h 10min</span> <i class="difficult-bar" data-feather="bar-chart"></i><span>Advance</span></p> <!-- durata/difficoltà -->
+                                              <p class="vote text-warning small">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <i class="bi bi-star"></i><span class="ml-1">3.5</span> 
+                                                <span class="text-muted">(7,500)</span>
+                                              </p>
+                                              <p class="price font-weight-bolder">
+                                                <h5>700$ 
+                                                    <del class="text-muted">850$</del>
+                                                </h5>
+                                              </p>
+                                            </div>
+                                            <div class="d-flex d-flex justify-content-between card-footer">
+                                                <div>
+                                                    <img src="./assets/avatar-1.jpg" width="30" height="30" class="rounded-circle"> Jenny Wilson
+                                                </div>
+                                                <div class="bookmark">
+                                                    <a href="#" class="btn">
+                                                        <i class="bi bi-bookmark"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                    <div class="card-deck">
+                                        <div class="card" >
+                                            <img src="./assets/course-node.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                            <div class="card-body">
+                                              <h5 class="card-title">Beginning Node.js, Express & MongoDb Development </h5> <!-- titolo dest -->
+                                              <p class="card-text font-weight-light small">
+                                                <i class="bi bi-clock"></i>
+                                                <span class="ml-1">2h 00min</span> <i class="difficult-bar intermediate" data-feather="bar-chart"></i><span>Intermediate</span></p> <!-- durata/difficoltà -->
+                                              <p class="vote text-warning small">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i><span class="ml-1">4.0</span> 
+                                                <span class="text-muted">(15,700)</span>
+                                              </p>
+                                              <p class="price font-weight-bolder">
+                                                <h5>$800 
+                                                    <del class="text-muted">$950</del>
+                                                </h5>
+                                              </p>
+                                            </div>
+                                            <div class="d-flex d-flex justify-content-between card-footer">
+                                                <div>
+                                                    <img src="./assets/avatar-3.jpg" width="30" height="30" class="rounded-circle"> Sina Rey
+                                                </div>
+                                                <div class="bookmark">
+                                                    <a href="#" class="btn">
+                                                        <i class="bi bi-bookmark"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1"> 
+                                    <div class="card-deck">
+                                        <div class="card" >
+                                            <img src="./assets/course-laravel.jpg" class="card-img-top" alt="..."> <!-- img dest -->
+                                            <div class="card-body">
+                                              <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn </h5> <!-- titolo dest -->
+                                              <p class="card-text font-weight-light small">
+                                                <i class="bi bi-clock"></i>
+                                                <span class="ml-1">1h 00min</span> <i class="difficult-bar beginner" data-feather="bar-chart"></i><span>Beginner</span></p> <!-- durata/difficoltà -->
+                                              <p class="vote text-warning small">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i><span class="ml-1">4.5</span> 
+                                                <span class="text-muted">(2,500)</span>
+                                              </p>
+                                              <p class="price font-weight-bolder">
+                                                <h5>$170 
+                                                    <del class="text-muted">$220</del>
+                                                </h5>
+                                              </p>
+                                            </div>
+                                            <div class="d-flex d-flex justify-content-between card-footer">
+                                                <div>
+                                                    <img src="./assets/avatar-7.jpg" width="30" height="30" class="rounded-circle"> Sobo Rikan
+                                                </div>
+                                                <div class="bookmark">
+                                                    <a href="#" class="btn">
+                                                        <i class="bi bi-bookmark"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev w-auto" type="button" data-target="#carouselExampleControls2" data-slide="prev">
+                            <span class="carousel-control-prev-icon rounded-circle" aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next w-auto" type="button" data-target="#carouselExampleControls2" data-slide="next">
+                        <span class="carousel-control-next-icon rounded-circle" aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                        <span class="sr-only">Next</span>
+                        </button>
+                    </div>
+                
+                
+                </div> 
+            </div>
+        </section>
+    </main>
+    <footer class="footer mt-5 py-3">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <span>2022&copy; Geeks, All Rigths Reserved.</span>
+            </div>
+            <div class="footer-links">                
+                <a href="./privacy.html">Privacy</a>
+                <a href="./terms.html">Terms</a>
+                <a href="./feedback.html">Feedback</a>
+                <a href="./support.html">Support</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+        feather.replace();
+
+        $('.carousel').carousel({ interval: false });
+        // for every slide in carousel, copy the next slide's item in the slide.
+        // Do the same for the next, next item.
+        $('.carousel .carousel-item').each(function(){
+            var minPerSlide = 4;
+            var next = $(this).next();
+            if (!next.length) {
+            next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+            
+            for (var i=0;i<minPerSlide;i++) {
+                next=next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+
+    </script>
+</body>
+</html>
